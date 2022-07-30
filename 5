@@ -1,0 +1,19 @@
+package main
+
+import "fmt"
+
+func main(){
+	var (
+		n int
+		b int
+		c int
+		w int
+	)
+	fmt.Scanf("%d %d %d",&n,&b,&c)
+	w=n+b+c
+	if (n<=0 || b<=0 || c<=0)||(n>=180 || b>=180 || c>=180)||(w<180||w>180) {
+		fmt.Println("No")
+	}else {
+		fmt.Println("Yes")
+	}
+}
