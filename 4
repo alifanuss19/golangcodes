@@ -1,0 +1,13 @@
+package main
+
+import "fmt"
+
+func main(){
+	var n int
+	fmt.Scanf("%d",&n)
+	var show int=1
+	for i:=n;i>=1;i--{
+		show *= i
+	}
+	fmt.Println(show)
+}
