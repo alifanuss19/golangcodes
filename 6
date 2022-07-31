@@ -1,0 +1,29 @@
+package main
+
+import (
+	"fmt"
+	"strconv"
+)
+
+func main() {
+	var (
+		n int
+		c int
+		w string
+	)
+	fmt.Scanf("%d", &n)
+	w = strconv.Itoa(n)
+	for {
+		if len(w) > 1 {
+			c = 0
+			for i := 0; i < len(w); i++ {
+				a, _ := strconv.Atoi(string(w[i]))
+				c = c + a
+			}
+			w = strconv.Itoa(c)
+		} else {
+			fmt.Println(w)
+			break
+		}
+	}
+}
